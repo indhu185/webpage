@@ -1,0 +1,981 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+p {
+    color: #CBC9C9
+}
+
+/* section portion */
+
+section.active {
+    display: block;
+}
+
+/* Header (Giftos at Top) */
+.header {
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+.nav {
+    background-color: #f9ece6;
+    width: 90%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    /* border-radius: 10px; */
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.nav-list {
+    color: #514F45;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.nav ul {
+
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li {
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* Keep HOME permanently white */
+.nav ul li:first-child {
+    color: black;
+    background-color: white;
+    /* Optional for visibility */
+    border-radius: 5px;
+    /* Optional for styling */
+    padding: 10px 15px;
+}
+
+/* Hide navbar in mobile view */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .header {
+        text-align: left;
+    }
+}
+
+
+/* Banner Section */
+.banner-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.banners {
+    background-color: #f89cab;
+    padding: 80px 20px;
+    margin: 0 auto;
+    width: 90%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.banners h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.banners p {
+    margin: 20px 0;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+.btn {
+    background-color: #d94865;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #f89cab;
+    border: 2px solid #d94865;
+    box-shadow: none;
+}
+
+.image-container img {
+    max-width: 100%;
+    width: 250px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .banners {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container {
+        justify-content: center;
+    }
+}
+
+
+/* Align Latest Products */
+.product-section h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for product cards */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid */
+    gap: 20px;
+    padding: 0 5%;
+    justify-content: center;
+}
+
+/* Product Card Styling */
+.product-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+
+/* Product Images */
+.product-card img {
+    width: 100px;
+    padding: 20px 10px 5px;
+    margin-bottom: 10px;
+}
+
+/* New badge */
+.new-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 500%;
+
+}
+
+/* Product Info */
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Product Name */
+.product-card h3 {
+    text-align: left;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Product Price */
+.product-card p {
+    text-align: right;
+    margin: 0;
+    font-size: 16px;
+    color: #d94865;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* One card per row for mobile */
+    }
+}
+
+.view-all-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Default button styling */
+.view-all-btn {
+    background: #d94865;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+}
+
+/* Hover effect: Keep the border but make background white */
+.view-all-btn:hover {
+    background: white;
+    color: #d94865;
+    border: 2px solid #d94865;
+    box-shadow: none;
+}
+
+.arrivals {
+    background-color: #b7e4f9;
+    padding: 50px;
+    margin: 40px auto;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* Space between image and text */
+}
+
+/* Image on the left (default) */
+.arrivals img {
+    max-width: 500%;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.arrivals h1 {
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.arrivals p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+}
+
+/* Buttons styling */
+.bttn {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.bttn button {
+
+    color: black;
+    border: 2px solid white;
+    padding: 12px 20px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.bttn button:first-child {
+    background: #109dbd;
+    color: white;
+    border: none;
+}
+
+.bttn button:hover:first-child {
+    background: #b7e4f9;
+    color: #109dbd;
+    border: 2px solid #109dbd;
+    box-shadow: none;
+}
+
+
+.bttn button:hover:last-child {
+    background: #b7e4f9;
+    color: #109dbd;
+    border: 2px solid white;
+}
+
+
+/* Responsive for smaller screens */
+
+@media (max-width: 768px) {
+    .arrivals {
+        flex-direction: column;
+        text-align: left;
+        padding: 30px;
+    }
+
+    .arrivals-content {
+        order: -1;
+        /* Moves the text above the image */
+    }
+
+    .arrivals img {
+        max-width: 300px;
+    }
+
+    .bttn {
+        justify-content: flex-start;
+        /* Align buttons to the left */
+    }
+}
+
+.why-shop {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.why-shop h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.shop-features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.feature-box {
+    background-color: #f8f6f4;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+}
+
+.feature-box img {
+    width: 50px;
+    /* Adjust icon size */
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .shop-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 90%;
+    }
+}
+
+.gifts {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #6929a5;
+    border-radius: 10px;
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.gifts img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.gifts-content {
+    max-width: 500px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.gifts h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.gifts p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .gifts-content {
+        flex-direction: column;
+        text-align: left;
+        padding: 30px;
+    }
+
+
+}
+
+.gifts .bttn {
+    display: flex;
+    justify-content: center;
+    /* Positions buttons on left and right */
+    width: 100%;
+    /* Ensures full container width */
+}
+
+.gifts .bttn button {
+    flex: 1;
+    /* Distributes space equally */
+    max-width: 150px;
+    /* Adjust button width as needed */
+}
+
+.gifts .bttn button:first-child {
+    background: white;
+    color: black;
+}
+
+.gifts.bttn :hover:first-child {
+    background: blueviolet;
+    color: white;
+    border: 2px solid white;
+
+}
+
+.gifts .bttn :last-child {
+    background: blueviolet;
+    color: white;
+    border: 2px solid transparent;
+}
+
+
+/* General Styling */
+
+@media (max-width: 768px) {
+    .gifts .bttn {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        /* Adds spacing between buttons */
+    }
+
+    .gifts .bttn button {
+        width: 100%;
+        max-width: 200px;
+        /* Ensures proper mobile width */
+    }
+}
+
+.contact-section h2 {
+    margin-left: 30px;
+    text-align: center;
+    padding: 30px;
+    /* Adjust as needed */
+    font-weight: bold;
+}
+
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+    /* Adjusts space between map and form */
+}
+
+/* Google Map */
+.map-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Container */
+.form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    min-width: 350px;
+    max-width: 450px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input Fields */
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-container textarea {
+    resize: none;
+}
+
+
+
+/* Button Styling */
+.form-container button {
+    background-color: #db4f66;
+    color: white;
+    /* Fixed text color */
+    padding: 10px;
+    /* Reduced padding for a smaller box */
+    font-size: 14px;
+    /* Slightly smaller font size */
+    width: 50%;
+    /* Adjust width */
+    max-width: 180px;
+    /* Reduced max-width */
+    text-align: center;
+    margin: 10px auto 0;
+    border: 2px solid #db4f66;
+    /* Border to maintain shape */
+
+}
+
+/* Hover Effect */
+.form-container button:hover {
+    background-color: white;
+    color: #db4f66;
+    /* Change text color to match border */
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container,
+    .form-container {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+/* General Styling */
+.testimonial-section {
+    text-align: center;
+    padding: 50px 20px;
+    overflow: hidden;
+}
+
+.testimonial-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Horizontal Scroll Wrapper */
+.testimonial-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    /* Show a small scrollbar */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE/Edge */
+    width: 100%;
+}
+
+/* For WebKit Browsers */
+.testimonial-wrapper::-webkit-scrollbar {
+    height: 5px;
+}
+
+.testimonial-wrapper::-webkit-scrollbar-thumb {
+    background: #d9534f;
+    border-radius: 5px;
+}
+
+.testimonial-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 400px;
+    max-width: 400px;
+    flex-shrink: 0;
+    text-align: left;
+    scroll-snap-align: start;
+    position: relative;
+    white-space: normal;
+    /* Ensures text wraps inside */
+}
+
+.testimonial-card h3 {
+    font-size: 1.5rem;
+    color: #d9534f;
+    margin: 10px 0 5px;
+}
+
+.testimonial-card .designation {
+    font-size: 1rem;
+    color: #777;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Quote Icon */
+.quote-icon {
+    font-size: 2rem;
+    color: #d9534f;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Navigation Buttons */
+.prev-btn,
+.next-btn {
+    background: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background: #c9302c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-container {
+        max-width: 100%;
+    }
+
+    .testimonial-wrapper {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .testimonial-card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .prev-btn,
+    .next-btn {
+        display: none;
+        /* Hide navigation buttons on small screens */
+    }
+}
+
+
+/* Footer Bottom */
+
+
+.footer {
+    position: relative;
+    /* Ensures child absolute elements align relative to footer */
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 80px 30px 30px;
+    /* Extra top padding for social media */
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    gap: 60px;
+}
+
+/* changes by kavin */
+
+.footer-social-anchor {
+    color: white;
+}
+
+.footer-social {
+    position: absolute;
+    top: 10px;
+    /* Moves it to the top */
+    left: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 22px;
+
+}
+
+
+/* Footer Content - 1 Row, 4 Columns */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    /* Each column grows equally */
+    min-width: 250px;
+    /* Ensures a good size for each column */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Ensures heading alignment */
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-column p {
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Newsletter Section */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.newsletter input {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.subscribe-btn {
+    background-color: #ff7f9a;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 160px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.subscribe-btn:hover {
+    background-color: #ff4f72;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    width: 100%;
+    font-size: 14px;
+    color: #ccc;
+    display: flex;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-left {
+        display: flex;
+        gap: 60px;
+        /* Default spacing */
+    }
+
+    @media (max-width: 768px) {
+        .footer-left {
+            flex-direction: column;
+            /* Stack items vertically */
+            align-items: center;
+            /* Center the content */
+            gap: 20px;
+            /* Reduce gap further */
+            text-align: center;
+        }
+    }
+
+
+}
