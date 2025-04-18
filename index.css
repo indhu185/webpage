@@ -101,6 +101,49 @@ a {
 
 
 /* Banner Section */
+.banner-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
 .banners {
     background-color: #f89cab;
     padding: 80px 20px;
@@ -108,15 +151,6 @@ a {
     width: 90%;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-}
-
-.banners .content {
-    flex: 2;
-    padding: 20px;
 }
 
 .banners h1 {
@@ -134,7 +168,6 @@ a {
     max-width: 600px;
 }
 
-/* Contact Us Button with Box Shadow */
 .btn {
     background-color: #d94865;
     color: white;
@@ -144,20 +177,12 @@ a {
     border-radius: 5px;
     text-transform: uppercase;
     margin-top: 10px;
-
 }
 
-.btn:hover {
-    background: white;
-    border: 2px solid #d94865;
-    box-shadow: none;
-}
-
-/* Click effect: Keep border, remove background */
 .btn:hover {
     background-color: #f89cab;
+    border: 2px solid #d94865;
     box-shadow: none;
-    /* Remove shadow on hover */
 }
 
 .image-container img {
@@ -166,17 +191,22 @@ a {
     border-radius: 10px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .banners {
         flex-direction: column;
         text-align: left;
     }
 
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     .image-container {
         justify-content: center;
     }
 }
+
 
 /* Align Latest Products */
 .product-section h1 {
