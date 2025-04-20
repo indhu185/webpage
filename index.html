@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./Changes.css">
     </link>
     <script src='./index.js'></script>
+    <script src="./Testing.js"></script>
+
 </head>
 
 <body>
@@ -139,12 +141,13 @@
                 </div>
             </div>
         </div>
-    </section>
-    </div> <!-- Closing product container -->
-    <section id="new-arrivals">
         <div class="view-all-container">
             <button class="view-all-btn">View All Products</button>
         </div>
+    </section>
+    </div> <!-- Closing product container -->
+    <section id="new-arrivals">
+
         <div class="arrivals">
             <img src="images/saving-img.png" alt="Savings Image">
             <div class="arrivals-content">
@@ -219,10 +222,8 @@
     </section>
     <section id="testimonial-Section" class="testimonial-section">
         <h2 class="testimonial-title">TESTIMONIAL</h2>
-
         <div class="testimonial-container">
             <button class="prev-btn">&#10094;</button>
-
             <div class="testimonial-card">
                 <h3 class="name">Morijorch</h3>
                 <p class="designation">Default model text</p>
@@ -240,7 +241,7 @@
                 <p class="testimonial-text">Variouseditors now use Lorem Ipsum as their default model text, and a search
                     for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem
                     Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still
-                    in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+                    in their infancy. editors now use Lorem Ipsum as ther default model text, and a search for 'lorem
                     ipsum' will uncover many web sites still in their infancy.</p>
                 <span class="quote-icon">❝</span>
             </div>
@@ -254,7 +255,11 @@
                     ipsum' will uncover many web sites still in their infancy. Various</p>
                 <span class="quote-icon">❝</span>
             </div>
-            <button class="next-btn">&#10095;</button>
+            <button onclick="NextTestmonial()" class="next-btn"><i class="fa fa-angle-right"
+                    aria-hidden="true"></i></button>
+
+            <butto onclick="PreviousTestmonial()" class="prev-btn"><i class="fa fa-angle-left"
+                    aria-hidden="true"></i></button>
         </div>
     </section>
     <!-- <footer id="footer-portion" class="footer">

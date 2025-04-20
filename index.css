@@ -13,6 +13,11 @@ p {
     color: #CBC9C9
 }
 
+
+/* .testimonial Portion */
+
+
+
 /* section portion */
 
 section.active {
@@ -739,12 +744,15 @@ a {
 
 /* Testimonial Card */
 .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     min-width: 400px;
-    max-width: 400px;
+    max-width: 1000px;
     flex-shrink: 0;
     text-align: left;
     scroll-snap-align: start;
