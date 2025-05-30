@@ -1,332 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giftos - Latest Products</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./Changes.css">
-    </link>
-    <script src='./index.js'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
+<link rel="stylesheet" href="style.css">
 <body>
-
-    <!-- Header (Giftos at Top) -->
-    <div class="header">
-        <h3> GIFTOS</h3>
+  <header>
+    <div class="logo">
+      <img src="./Images/Icon.png" alt="Logo">
+      <h2>Nexcent</h2>
     </div>
+    <label for="menu-toggle" class="menu-toggle">☰</label>
+    <input type="checkbox" id="menu-toggle">
     <nav class="nav">
-        <ul>
-            <li><a class="nav-list" href="#home">HOME</a></li>
-            <li><a class="nav-list" href="#shop">SHOP</a></li>
-            <li><a class="nav-list" href="#why-us">WHY US</a></li>
-            <li><a class="nav-list" href="#testimonial-Section">TESTIMONIAL</a></li>
-            <li><a class="nav-list" href="#contact-section">CONTACT US</a></li>
-        </ul>
-        <div class="icons">
-            <i class="fa-solid fa-user"></i> Login
-            <i class="fa-solid fa-bag-shopping"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Community</a>
+      <a href="#">Blog</a>
+      <a href="#">Pricing</a>
+      <button class="register-btn">Register Now →</button>
     </nav>
-    <section class="checkporgress">
+  </header>
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Lessons and insights <br><span class="highlight">from 8 years</span></h1>
+        <p>Where to grow your business as a photographer: site or social media?</p>
+        <button class="hero-btn">Register</button>
+      </div>
+      <div class="hero-image">
+        <img src="./Images/img1.png" alt="Illustration" />
+      </div>
+    </div>
+  </section>
+  <section class="clients-section">
+    <h2>Our Clients</h2>
+    <p>We have been working with some Fortune 500+ clients</p>
+    <div class="clients-logos">
+      <img src="./Images/img2.png" alt="Client 1">
+      <img src="./Images/img3.png" alt="Client 2">
+      <img src="./Images/img4.png" alt="Client 3">
+      <img src="./Images/img5.png" alt="Client 4">
+      <img src="./Images/img6.png" alt="Client 5">
+      <img src="./Images/img7.png" alt="Client 6">
+      <img src="./Images/img8.png" alt="Client 7">
+    </div>
+  </section>
+  <section class="community-section">
+    <h2>Manage your entire community <br> <span>in a single system</span></h2>
+    <p class="sub-heading">Who is Nextcent suitable for?</p>
 
-    </section>
-    <!-- Banner Section -->
-    <section class="banners">
-        <div class="banner-container">
-            <div class="carousel">
-                <div class="carousel-item  active banner-container">
-                    <div>
-                        <h1><b>Welcome To</b> <br> <b>Our Gift Shop</b></h1>
-                        <p>Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error
-                            distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus
-                            maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.</p>
-                        <button class="btn">Contact Us</button>
-                    </div>
-                    <div>
-                        <img src="images/slider-img.png" alt="Gift Shop">
-                    </div>
-                </div>
-                <div class="carousel-item  banner-container">
-                    <div>
-                        <h1><b>Welcome To</b> <br> <b>Our Gift Shop</b></h1>
-                        <p>Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error
-                            distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus
-                            maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.</p>
-                        <button class="btn">Contact Us</button>
-                    </div>
-                    <div>
-                        <img src="images/slider-img.png" alt="Gift Shop">
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
-        </div>
-    </section>
+    <div class="card-container">
+      <div class="card">
+        <img src="./Images/img9.png" alt="Membership Icon" />
+        <h3>Membership Organisations</h3>
+        <p>Our membership management software provides full automation of membership renewals and payments</p>
+      </div>
+      <div class="card">
+        <img src="./Images/img10.png" alt="Associations Icon" />
+        <h3>National Associations</h3>
+        <p>Our membership management software provides full automation of membership renewals and payments</p>
+      </div>
+      <div class="card">
+        <img src="./Images/img11.png" alt="Clubs Icon" />
+        <h3>Clubs And Groups</h3>
+        <p>Our membership management software provides full automation of membership renewals and payments</p>
+      </div>
+    </div>
+  </section>
+  <section class="split-section">
+    <div class="image-container">
+      <img src="./Images/img12.png" alt="Illustration" />
+    </div>
+    <div class="text-container">
+      <h2>The unseen of spending three years at Pixelgrade</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar elit amet risus pretium auctor. 
+        Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
+      </p>
+      <a href="#" class="cta-button">Learn More</a>
+    </div>
+  </section>
+  <section class="achievements-section">
+  <div class="content">
+    <div class="left">
+      <h2>Helping a local <br><span>business reinvent itself</span></h2>
+      <p>We reached here with our hard work and dedication</p>
+    </div>
 
-    <section id="shop" class="product-section">
-        <h1><b>LATEST PRODUCTS</b></h1>
-        <div class="product-container">
-            <div class="product-card">
-                <span class="new-badge">NEW</span>
-                <img src="./images/p1.png" alt="Ring">
-                <div class="product-info">
-                    <h3>Ring</h3>
-                    <p>$200</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <span class="new-badge">NEW</span>
-                <img src="images/p2.png" alt="Watch">
-                <div class="product-info">
-                    <h3>Watch</h3>
-                    <p>$300</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <span class="new-badge">NEW</span>
-                <img src="./images/p3.png" alt="Teddy Bear">
-                <div class="product-info">
-                    <h3>Teddy Bear</h3>
-                    <p>$110</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <span class="new-badge">NEW</span>
-                <img src="images/p4.png" alt="Flower Bouquet">
-                <div class="product-info">
-                    <h3>Flower Bouquet</h3>
-                    <p>$45</p>
-                </div>
-            </div>
+    <div class="stats">
+      <div class="stat-item">
+        <img src="./Images/img13.png" alt="Members" />
+        <div>
+          <h3>2,245,341</h3>
+          <p>Members</p>
         </div>
-        <div class="product-container">
-            <div class="product-card">
-                <span class="new-badge">NEW</span>
-                <img src="images/p5.png" alt="Ring">
-                <div class="product-info">
-                    <h3>Teddy Bear</h3>
-                    <p>$95</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <span class="new-badge">NEW</span>
-                <img src="images/p6.png" alt="Watch">
-                <div class="product-info">
-                    <h3>Flower Bouquet</h3>
-                    <p>$70</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <span class="new-badge">NEW</span>
-                <img src="images/p7.png" alt="Teddy Bear">
-                <div class="product-info">
-                    <h3>Watch</h3>
-                    <p>$400</p>
-                </div>
-            </div>
-            <div class="product-card">
-                <span class="new-badge">NEW</span>
-                <img src="images/p8.png" alt="Flower Bouquet">
-                <div class="product-info">
-                    <h3>Ring</h3>
-                    <p>$450</p>
-                </div>
-            </div>
+      </div>
+      <div class="stat-item">
+        <img src="./Images/img14.png" alt="Clubs" />
+        <div>
+          <h3>46,328</h3>
+          <p>Clubs</p>
         </div>
-    </section>
-    </div> <!-- Closing product container -->
-    <section id="new-arrivals">
-        <div class="view-all-container">
-            <button class="view-all-btn">View All Products</button>
+      </div>
+      <div class="stat-item">
+        <img src="./Images/img15.png" alt="Event Bookings" />
+        <div>
+          <h3>828,867</h3>
+          <p>Event Bookings</p>
         </div>
-        <div class="arrivals">
-            <img src="images/saving-img.png" alt="Savings Image">
-            <div class="arrivals-content">
-                <h1>Best Savings on New Arrivals</h1>
-                <p>Qui ex dolore at repellat, quia neque doloribus omnis adipisci, ipsum eos odio fugit ut eveniet
-                    blanditiis praesentium totam non nostrum dignissimos nihil eius facere et eaque.</p>
-                <div class="bttn">
-                    <button>Buy Now</button>
-                    <button>See More</button>
-                </div>
-            </div>
+      </div>
+      <div class="stat-item">
+        <img src="./Images/img16.png" alt="Payments" />
+        <div>
+          <h3>1,926,436</h3>
+          <p>Payments</p>
         </div>
-    </section>
-    <section id="why-us" class="why-shop">
-        <h2>WHY SHOP WITH US</h2>
-        <div class="shop-features">
-            <div class="feature-box">
-                <img src="images/truck.svg" alt="Fast Delivery">
-                <h3>Fast Delivery</h3>
-                <p>Variations of passages of Lorem Ipsum available</p>
-            </div>
-            <div class="feature-box">
-                <img src="images/free.svg" alt="Free Shipping">
-                <h3>Free Shipping</h3>
-                <p>Variations of passages of Lorem Ipsum available</p>
-            </div>
-            <div class="feature-box">
-                <img src="images/high-quality.svg" alt="Best Quality">
-                <h3>Best Quality</h3>
-                <p>Variations of passages of Lorem Ipsum available</p>
-            </div>
-        </div>
-    </section>
-    <section id="gift-section">
-        <div class="gifts">
-            <img src="images/gifts.png">
-            <div class="gifts-content">
-                <h1>GIFTS FOR YOUR LOVED ONES </h1>
-                <p>Omnis ex nam laudantium odit illum harum, excepturi accusamus at corrupti, velit blanditiis unde
-                    perspiciatis, vitae minus culpa? Beatae at aut consequuntur porro adipisci aliquam eaque iste
-                    ducimus
-                    expedita accusantium?</p>
-                <div class="bttn">
-                    <button>Buy Now</button>
-                    <button>See More</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact-section" class="contact-section">
-        <h2>CONTACT US</h2>
-        <div class="contact-container">
-            <!-- Google Map -->
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2624.9916246075636!2d2.2944812999999997!3d48.858370099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1742560332964!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="calender">
+    <div class="image-section">
+      <img src="./Images/img17.png" alt="Phone Illustration" />
+    </div>
+    <div class="content-section">
+      <h2>How to design your site footer like we did</h2>
+      <p>
+        Donec a erat justo. Fusce egestas tristique ultricies. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna.
+        Donec quis erat et libero ultrices mollis. In hac habitasse platea dictumst Vivamus vehicula leo dui, at porta nisl facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisl eget nulla commodo.
+      </p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+  <section class="customer">
+    <div class="image-box">
+      <img src="./Images/img18.png" alt="Customer Logo" />
+    </div>
+    <div class="content-box">
+      <p>
+        Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim.
+        Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales.
+      </p>
+      <div class="author">Tim Smith</div>
+      <div class="author-role">British Dragon Boat Racing Association</div>
 
-            <!-- Contact Form -->
-            <div class="form-container">
-                <form>
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="tel" name="phone" placeholder="Phone" required>
-                    <textarea name="message" placeholder="Message" rows="4" required></textarea>
-                    <button type="submit">SEND</button>
-                </form>
-            </div>
+      <div class="logos">
+        <img src="./Images/Logo1.png" alt="Logo 1">
+        <img src="./Images/Logo 2.png" alt="Logo 2">
+        <img src="./Images/Logo 3.png" alt="Logo 3">
+        <img src="./Images/Logo 4.png" alt="Logo 4">
+        <img src="./Images/Logo 5.png" alt="Logo 5">
+        <img src="./Images/Logo 6.png">
+        <a href="#" class="view-all">Meet all customers</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="community">
+    <h2>Caring is the new marketing</h2>
+    <p class="subtitle">
+      The Nexcent blog is the best place to read about the latest membership insights, trends and more.
+      See who's joining the community, read about how our community are increasing their membership income and lots more.
+    </p>
+
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img src="./Images/img19.png" alt="Blog Image 1" />
+        <div class="content">
+          <h3>Creating Streamlined Safeguarding Processes with OneRen</h3>
+          <a href="#">Readmore</a>
         </div>
-    </section>
-    <section id="testimonial-Section" class="testimonial-section">
-        <h2 class="testimonial-title">TESTIMONIAL</h2>
+      </div>
 
-        <div class="testimonial-container">
-            <button class="prev-btn">&#10094;</button>
-
-            <div class="testimonial-card">
-                <h3 class="name">Morijorch</h3>
-                <p class="designation">Default model text</p>
-                <p class="testimonial-text"> editors now use Lorem Ipsum as their default model text, and a search for
-                    'lorem ipsum' will uncover many web sites still in t heir infancy. Variouseditors now use Lorem
-                    Ipsum
-                    as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                    their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for
-                    'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
-                <span class="quote-icon">❝</span>
-            </div>
-            <div class="testimonial-card">
-                <h3 class="name">Rochak</h3>
-                <p class="designation">Default model text</p>
-                <p class="testimonial-text">Variouseditors now use Lorem Ipsum as their default model text, and a search
-                    for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem
-                    Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still
-                    in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem
-                    ipsum' will uncover many web sites still in their infancy.</p>
-                <span class="quote-icon">❝</span>
-            </div>
-            <div class="testimonial-card">
-                <h3 class="name">Brad Johns</h3>
-                <p class="designation">Default model text</p>
-                <p class="testimonial-text">Variouseditors now use Lorem Ipsum as their default model text, and a search
-                    for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as
-                    their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem
-                    ipsum' will uncover many web sites still in their infancy. Various</p>
-                <span class="quote-icon">❝</span>
-            </div>
-            <button class="next-btn">&#10095;</button>
+      <div class="blog-card">
+        <img src="./Images/img20.png" alt="Blog Image 2" />
+        <div class="content">
+          <h3>What are your safeguarding responsibilities and how can you manage them?</h3>
+          <a href="#">Readmore</a>
         </div>
-    </section>
-    <!-- <footer id="footer-portion" class="footer">
-        <footer class="footer-left">
-            <div class="footer-social">
-                <a class="footer-social-anchor" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="footer-social-anchor" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="footer-social-anchor" href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            <div class="footer-column about">
-                <h3>ABOUT US</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
-                    consectetur adipiscing elit.</p>
-            </div>
+      </div>
 
-            <div class="footer-column newsletter">
-                <h3>Newsletter</h3>
-                <input type="email" placeholder="Enter your email">
-                <button class="subscribe-btn">SUBSCRIBE</button>
-            </div>
-
-            <div class="footer-column help">
-                <h3>NEED HELP</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet.</p>
-            </div>
-
-            <div class="footer-column contact">
-                <h3>CONTACT US</h3>
-                <p>📍 Gb road 123 London, UK</p>
-                <p>📞 +01 12345678901</p>
-                <p>📧 demo@gmail.com</p>
-            </div>
-            </div>
-
-            <div class="footer-bottom">
-                <hr>
-                <p>© 2025 All Rights Reserved by Free HTML Templates</p>
-            </div>
-        </footer> -->
-    <footer class="footer-section-style" id="footer-portion">
-        <div class="footer-section-social">
-            <a class="footer-social-anchor" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="footer-social-anchor" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="footer-social-anchor" href="#"><i class="fab fa-youtube"></i></a>
+      <div class="blog-card">
+        <img src="./Images/img21.png" alt="Blog Image 3" />
+        <div class="content">
+          <h3>Revamping the Membership Model with Triathlon Australia</h3>
+          <a href="#">Readmore</a>
         </div>
-        <div class="footer-section-mainitems">
-            <div class="footer-section-mainitems-inner">
-                <h3>ABOUT US</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
-                    consectetur adipiscing elit.</p>
-            </div>
-            <div class="footer-section-mainitems-inner">
-                <h3>Newsletter</h3>
-                <input style="height: 45px;width: 250px;padding:15px;" type="email" placeholder="Enter your email">
-                <button class="subscribe-btn">SUBSCRIBE</button>
-            </div>
-            <div class="footer-section-mainitems-inner">
-                <h3>NEED HELP</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="footer-section-mainitems-inner">
-                <h3>CONTACT US</h3>
-                <p>📍 Gb road 123 London, UK</p>
-                <p>📞 +01 12345678901</p>
-                <p>📧 demo@gmail.com</p>
-            </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2>Pellentesque suscipit fringilla libero eu.</h2>
+    <a href="#" class="cta-btn">Get a Demo →</a>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="footer-container">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <h3><img src="./Images/Icon.png">Nexcent</h3>
+        <p>Copyright © 2020 Landify UI Kit.<br>All rights reserved</p>
+        <div class="social-icons">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" />
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Dribbble" />
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
         </div>
-        <div class="footer-section-bottom">
-            <hr style="width: 800px;">
-            <p>© 2025 All Rights Reserved by Free HTML Templates</p>
-        </div>
-    </footer>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li>About us</li>
+          <li>Blog</li>
+          <li>Contact us</li>
+          <li>Pricing</li>
+          <li>Testimonials</li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li>Help center</li>
+          <li>Terms of service</li>
+          <li>Legal</li>
+          <li>Privacy policy</li>
+          <li>Status</li>
+        </ul>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-subscribe">
+        <h4>Stay up to date</h4>
+        <form>
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit">✈</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
 </body>
-
 </html>
